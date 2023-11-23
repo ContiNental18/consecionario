@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Deportivos</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Agrega estilos para la clase container */
+        .container {
+          display: flex;
+          justify-content: space-between;
+        }
+  
+        /* Estilos para la clase perfil */
+        .perfil {
+          text-align: center;
+          max-width: 300px;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          overflow: hidden;
+          margin-bottom: 20px;
+          margin-right: 20px; /* Agrega un margen derecho */
+        }
+      </style>
+</head>
+<body style="background-color:rgb(223, 234, 238); ">
+
+    <header>
+        <div class="logo-container">
+          <img src="tu_logo.png" alt="Logo">
+          <h1>ContiNental</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a onclick="toggleVehiculos()">Vehículos</a>
+              <!-- Lista de opciones para el menú "Vehículos" -->
+              <ul id="vehiculosMenu" class="vehiculos-menu">
+                <li><a href="coches.html">Todos</a></li>
+                <li><a href="coches.html"> Usado</a></li>
+              </ul>
+            </li>
+            
+            <li><a onclick="toggleSucursales()">Sucursales</a>
+              <!-- Lista de sucursales dentro del elemento li -->
+              <ul id="sucursalesMenu" class="sucursales-menu">
+                <li ><a href="index.html" > Tandil</a></li>
+                <li ><a href="indexazul.html" >Azul</a></li>
+                <li ><a href="indexmp.html">Rosario</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+
+
+
+
+
+    <section>
+        <div class="bienvenida">
+          <p>Aquí en nuestro concesionario, ofrecemos una emocionante selección de coches deportivos. Cada uno de estos vehículos combina potencia, estilo y rendimiento excepcionales. Descubre la pasión de la conducción con nuestra exclusiva gama de coches deportivos de alta gama.</p>
+        </div>
+      </section>
+  <!-- Sección de Deportivos -->
+  <section class="deportivos">
+    <div class="container">
+      <!-- Deportivo 1 - Ford Mustang 5.0 GT 421cv -->
+      <div class="perfil"style="border: 5px solid #837e7e; /* Borde del menú */">
+        <img src="mustang.jpeg" alt="Ford Mustang 5.0 GT 421cv">
+        <div class="info">
+          <h2>Ford Mustang 5.0 GT 421cv</h2>
+          <p>Modelo: 2017</p>
+          <p>KM: 89,000</p>
+          <p>Color: Blanco</p>
+          <p>U$S 75,000</p>
+        </div>
+      </div>
+
+      <!-- Deportivo 2 - Porsche Cayman 3.4 S 295cv (987) Manual -->
+      <div class="perfil"style="border: 5px solid #837e7e; /* Borde del menú */">
+        <img src="Porsche_Cayman.jpeg" alt="Porsche Cayman 3.4 S 295cv (987) Manual">
+        <div class="info">
+          <h2>Porsche Cayman 3.4 S 295cv (987) Manual</h2>
+          <p>Modelo: 2008</p>
+          <p>KM: 29,000</p>
+          <p>Color: Negro</p>
+          <p>U$S 79,000</p>
+        </div>
+      </div>
+
+      <!-- Deportivo 3 - Toyota 86 2.0 GT -->
+      <div class="perfil"style="border: 5px solid #837e7e; /* Borde del menú */">
+        <img src="toyota86.jpeg" alt="Toyota 86 2.0 GT">
+        <div class="info">
+          <h2>Toyota 86 2.0 GT</h2>
+          <p>Modelo: 2014</p>
+          <p>KM: 70,000</p>
+          <p>Color: Rojo</p>
+          <p>U$S 28,900</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Función para mostrar u ocultar el menú de vehículos
+    function toggleVehiculos() {
+       var vehiculosMenu = document.getElementById('vehiculosMenu');
+       vehiculosMenu.style.display = (vehiculosMenu.style.display === 'block') ? 'none' : 'block';
+     }
+     function toggleSucursales() {
+        var sucursalesMenu = document.getElementById('sucursalesMenu');
+        sucursalesMenu.style.display = (sucursalesMenu.style.display === 'block') ? 'none' : 'block';
+      }
+     // Función para manejar la selección de sucursal
+     function seleccionarSucursal(nombreSucursal) {
+       alert('Ha seleccionado la sucursal: ' + nombreSucursal);
+     }
+ 
+     // Función para filtrar vehículos por categoría
+     function filtrarVehiculos(categoria) {
+       alert('Ha seleccionado la categoría de vehículos: ' + categoria);
+       // Agrega lógica para mostrar los vehículos según la categoría
+     }
+ </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+.bienvenida {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .bienvenida h1 {
+    color: #333;
+  }
+  
+  .bienvenida p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .boton-destacado {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+    /* Estilos para el menú de sucursales */
+    .vehiculos-menu,.sucursales-menu {
+        display: none;
+        position: absolute;
+        background-color: #9e9d9d; /* Color de fondo */
+        border: 1px solid #837e7e; /* Borde del menú */
+        padding: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra */
+        z-index: 1;
+      }
+  
+      /* Estilo para los elementos de la lista del menú */
+      .vehiculos-menu,.sucursales-menu li {
+        margin-top: 5px;
+        list-style: none;
+        padding: 5px;
+        cursor: pointer;
+      }
+  .boton-destacado:hover {
+    background-color: #0056b3;
+  }
+
+  .perfil-container {
+  border: 10px solid #007BFF;
+  padding: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 20px;
+}
+
+.perfil {
+  text-align: center;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-top: 20px; /* Ajuste del margen superior para agregar espacio */
+}
+  .perfil img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .info {
+    padding: 15px;
+  }
+  
+  .info h2 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .info p {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+.carousel-container {
+    position: relative;
+  }
+  
+  .slick-carousel {
+    width: 100%;
+    display: flex;
+  }
+  
+  .slick-prev, .slick-next {
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  .image-container {
+    position: relative;
+  }
+  
+  .movable-image {
+    position: absolute;
+    cursor: grab; /* Cambia el cursor al pasar sobre la imagen */
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  
+  
+  /* Estilos para el footer */
+  footer {
+    background-color: #b3b0b0;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .servicios, .comprar, .vehiculos, .ayuda, .redes-sociales {
+    max-width: 400px;
+  }
+  
+  .servicios h2, .comprar h2, .vehiculos h2, .ayuda h2, .redes-sociales h2 {
+    color: #000;
+  }
+  
+  .servicios ul, .comprar ul, .vehiculos ul, .ayuda ul, .redes-sociales ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .servicios ul li, .comprar ul li, .vehiculos ul li, .ayuda ul li, .redes-sociales ul li {
+    margin-bottom: 10px;
+  }
+  
+  .servicios ul li a, .comprar ul li a, .vehiculos ul li a, .ayuda ul li a, .redes-sociales ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  

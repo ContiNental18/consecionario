@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>coches</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="tu_logo.png" alt="Logo">
+      <h1>ContiNental</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a onclick="toggleVehiculos()">Vehículos</a>
+          <!-- Lista de opciones para el menú "Vehículos" -->
+          <ul id="vehiculosMenu" class="vehiculos-menu">
+            <li><a href="coches.html">Todos</a></li>
+            <li ><a href=""> 0 KM</a></li>
+            <li ><a href="deportivo.html"> Deportivos</a></li>
+          </ul>
+        </li>
+        
+        <li><a onclick="toggleSucursales()">Sucursales</a>
+          <!-- Lista de sucursales dentro del elemento li -->
+          <ul id="sucursalesMenu" class="sucursales-menu">
+            <li ><a href="index.html" >Tandil</a></li>
+            <li ><a href="indexazul.html" >Azul</a></li>
+            <li ><a href="indexmp.html">Rosario</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <section class="bienvenida">
+        <div class="container"> 
+    <p>
+        Descubre nuestra variada gama de vehículos que incluye modelos icónicos y confiables. Desde el elegante Peugeot Partner 1.6 HDI hasta el versátil Ford Ecosport 1.6 S 110cv, cada coche ha sido seleccionado cuidadosamente para ofrecer el mejor rendimiento y comodidad.
+
+        Explora nuestro catálogo para encontrar el vehículo que se adapte a tus necesidades y estilo de vida. Además, contamos con modelos destacados como el Volkswagen Gol 1.4 Power 83cv, que combina potencia y eficiencia en un diseño moderno.
+
+        En nuestro concesionario, nos esforzamos por proporcionar una experiencia única de compra de automóviles, respaldada por la calidad y confiabilidad de nuestros vehículos. ¡Ven y descubre la emoción de conducir con nosotros!
+    </p>
+</div>
+</section>
+    <div class="perfil-container">
+        <div class="perfil">
+          <img src="207xr.jpeg" alt="Auto 1">
+          <div class="info">
+            <h2>Modelo 1: 207 XR 1.4 5P</h2>
+            <p>Kilometraje: 88000</p>
+            <p>Año: 2010</p>
+            <p>Color: Gris</p>
+            <p>Categoría: Usado</p>
+          </div>
+        </div>
+    
+        
+            <div class="perfil">
+              <img src="peugeot16.jpeg" alt="Peugeot Partner 1.6 HDI">
+              <div class="info">
+                <h2>Peugeot Partner 1.6 HDI</h2>
+                <p>Kilometraje: 169000</p>
+                <p>Año: 2017</p>
+                <p>Color: Blanco</p>
+                <p>Categoría: Usado</p>
+              </div>
+            </div>
+         <div class="perfil">
+            <img src="volkswagen_gol.jpeg" alt="Volkswagen Gol 1.4 Power 83cv">
+            <div class="info">
+              <h2>Volkswagen Gol 1.4 Power 83cv</h2>
+              <p>Modelo: 2011</p>
+              <p>Colores: Gris</p>
+              <p>KM: 92.000 km</p>
+            </div>
+          </div>
+      
+          <div class="perfil">
+            <img src="chevrolet_celta.jpeg" alt="Chevrolet Celta 1.4 Lt">
+            <div class="info">
+              <h2>Chevrolet Celta 1.4 Lt</h2>
+              <p>Modelo: 2013</p>
+              <p>KM: 79.212 km</p>
+              <p>Color: Rojo</p>
+            </div>
+          </div>
+      
+          <div class="perfil">
+            <img src="chevrolet_astra.jpeg" alt="Chevrolet Astra 2.0">
+            <div class="info">
+              <h2>Chevrolet Astra 2.0</h2>
+              <p>Modelo: 2007</p>
+              <p>KM: 95.000 km</p>
+              <p>Color: Dorado</p>
+            </div>
+          </div>
+          <div class="perfil">
+            <img src="citroen_c4.jpeg" alt="Citroën C4 1.6">
+            <div class="info">
+              <h2>Citroën C4 1.6</h2>
+              <p>Modelo: 2010</p>
+              <p>KM: 138.014 km</p>
+              <p>Color: Gris</p>
+            </div>
+          </div>
+      
+          <div class="perfil">
+            <img src="ford_ecosport.jpeg" alt="Ford Ecosport 1.6 S 110cv">
+            <div class="info">
+              <h2>Ford Ecosport 1.6 S 110cv</h2>
+              <p>Modelo: 2015</p>
+              <p>KM: 94.839 km</p>
+              <p>Color: Blanco</p>
+            </div>
+          </div>
+      
+          <div class="perfil">
+            <img src="ford_focus.jpeg" alt="Ford Focus II 2.0 Exe Sedan Trend">
+            <div class="info">
+              <h2>Ford Focus II 2.0 Exe Sedan Trend</h2>
+              <p>Modelo: 2014</p>
+              <p>KM: 146.927 km</p>
+              <p>Color: Azul</p>
+            </div>
+          </div>
+      
+
+</div>
+<script>
+  // Función para mostrar u ocultar el menú de vehículos
+  function toggleVehiculos() {
+     var vehiculosMenu = document.getElementById('vehiculosMenu');
+     vehiculosMenu.style.display = (vehiculosMenu.style.display === 'block') ? 'none' : 'block';
+   }
+   function toggleSucursales() {
+     var sucursalesMenu = document.getElementById('sucursalesMenu');
+     sucursalesMenu.style.display = (sucursalesMenu.style.display === 'block') ? 'none' : 'block';
+   }
+   // Función para manejar la selección de sucursal
+   function seleccionarSucursal(nombreSucursal) {
+     alert('Ha seleccionado la sucursal: ' + nombreSucursal);
+   }
+
+   // Función para filtrar vehículos por categoría
+   function filtrarVehiculos(categoria) {
+     alert('Ha seleccionado la categoría de vehículos: ' + categoria);
+     // Agrega lógica para mostrar los vehículos según la categoría
+   }
+</script>
+</body>
+</html>

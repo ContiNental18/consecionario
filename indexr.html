@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>ContiNental - Tu Concesionario de Confianza</title>
+</head>
+<body>
+    
+  <header style="background-color:rgb(145, 145, 36);">
+    <div class="logo-container">
+      <img src="tu_logo.png" alt="Logo">
+      <h1>ContiNental(Rosario)</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a onclick="toggleVehiculos()">Vehículos</a>
+          <!-- Lista de opciones para el menú "Vehículos" -->
+          <ul id="vehiculosMenu" class="vehiculos-menu">
+            <li><a href="coches.html">Todos</a></li>
+            <li onclick="filtrarVehiculos('Usado')">Usado</li>
+            <li ><a href="#"> 0 KM</a></li>
+            <li ><a href="deportivo.html"> Deportivos</a></li>
+          </ul>
+        </li>
+        
+        <li><a onclick="toggleSucursales()">Sucursales</a>
+          <!-- Lista de sucursales dentro del elemento li -->
+          <ul id="sucursalesMenu" class="sucursales-menu">
+            <li ><a href="indexmp.html" > Mar del Plata</a></li>
+            <li ><a href="indexazul.html" >Azul</a></li>
+            <li ><a href="index.html">Tandil</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Sección de Bienvenida -->
+  <section class="bienvenida">
+    <div class="container">
+      <h1>Bienvenido al ContiNental</h1>
+      <p>Descubre una amplia gama de vehículos nuevos y usados. En ContiNental, nos dedicamos a proporcionar la mejor experiencia de compra de automóviles para nuestros clientes. Explora nuestra selección y encuentra el vehículo perfecto para tus necesidades.</p>
+      
+    </div>
+  </section>
+  <p></p>
+  <!-- Perfil 1 -->
+<!-- Perfil 1 - Volkswagen Gol Trend 1.6 Trendline -->
+<div class="perfil-container">
+<div class="perfil">
+  <img src="VolkswagenGolTrend.jpeg" alt="Volkswagen Gol Trend 1.6 Trendline">
+  <div class="info">
+    <h2>Volkswagen Gol Trend 1.6 Trendline</h2>
+    <p>Modelo: 2016</p>
+    <p>KM: 0 km</p>
+    <p>Color: Blanco</p>
+  </div>
+</div>
+
+<!-- Perfil 2 - Ford Focus II 2.0 Exe Sedan Trend -->
+<div class="perfil">
+  <img src="ford_focus.jpeg" alt="Ford Focus II 2.0 Exe Sedan Trend">
+  <div class="info">
+    <h2>Ford Focus II 2.0 Exe Sedan Trend</h2>
+    <p>Modelo: 2014</p>
+    <p>KM: 0 km</p>
+    <p>Color: Azul</p>
+  </div>
+</div>
+
+<!-- Perfil 3 - Ford Ecosport 1.6 S 110cv -->
+<div class="perfil">
+  <img src="ford_ecosport.jpeg" alt="Ford Ecosport 1.6 S 110cv">
+  <div class="info">
+    <h2>Ford Ecosport 1.6 S 110cv</h2>
+    <p>Modelo: 2015</p>
+    <p>KM:0 km</p>
+    <p>Color: Blanco</p>
+  </div>
+</div>
+
+</div>
+  
+  <footer>
+    <section class="servicios">
+      <h2>SERVICIOS</h2>
+      <ul>
+        <li><a href="#">Servicio Personalizado</a></li>
+        <li><a href="#">Agendá un Servicio</a></li>
+        <li><a href="#">Garantía</a></li>
+        <li><a href="#">Asistencia en ruta</a></li>
+        <li><a href="#">Manual de Propietarios</a></li>
+        <li><a href="#">Hojas de rescate</a></li>
+        <li><a href="#">Consumo de Combustible</a></li>
+      </ul>
+    </section>
+    <section class="comprar">
+        <h2>COMPRAR</h2>
+        <ul>
+          <li><a href="#">Solicitá una cotización</a></li>
+          <li><a href="#">Encontrá un concesionario</a></li>
+          <li><a href="#">Ventas Corporativas</a></li>
+          <li><a href="#">Financiamiento</a></li>
+          <li><a href="#">Descargar Catálogos</a></li>
+          <li><a href="#">Chateá con nosotros</a></li>
+          <li><a href="#">Accesorios</a></li>
+        </ul>
+      </section>
+      <section class="vehiculos">
+        <h2>VEHÍCULOS</h2>
+        <ul>
+          <li><a href="#">Todos</a></li>
+          <li><a href="coches.html">Autos</a></li>
+          <li><a href="#">Deportivos</a></li>
+        </ul>
+      </section>
+  
+      <section class="ayuda">
+        <h2>AYUDA</h2>
+        <ul>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Mapa del sitio</a></li>
+        </ul>
+      </section>
+  
+      <section class="redes-sociales">
+        <h2>Seguinos en nuestras redes</h2>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Chateá con nosotros</a></li>
+        </ul>
+      </section>
+  </footer>
+  <script>
+     // Función para mostrar u ocultar el menú de vehículos
+     function toggleVehiculos() {
+        var vehiculosMenu = document.getElementById('vehiculosMenu');
+        vehiculosMenu.style.display = (vehiculosMenu.style.display === 'block') ? 'none' : 'block';
+      }
+      function toggleSucursales() {
+        var sucursalesMenu = document.getElementById('sucursalesMenu');
+        sucursalesMenu.style.display = (sucursalesMenu.style.display === 'block') ? 'none' : 'block';
+      }
+      // Función para manejar la selección de sucursal
+      function seleccionarSucursal(nombreSucursal) {
+        alert('Ha seleccionado la sucursal: ' + nombreSucursal);
+      }
+  
+      // Función para filtrar vehículos por categoría
+      function filtrarVehiculos(categoria) {
+        alert('Ha seleccionado la categoría de vehículos: ' + categoria);
+        // Agrega lógica para mostrar los vehículos según la categoría
+      }
+  </script>
+</body>
+</html>
